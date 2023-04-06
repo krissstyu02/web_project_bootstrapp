@@ -195,26 +195,14 @@
         }
 
         async submit() {
-            try {
                 const formData = new FormData(this.form);
-                const contentType = 'application/json';
                 const response = await fetch(this.url, {
                     method: 'POST',
-                    headers: {
-                        'Content-Type': contentType
-                    },
-                    body: JSON.stringify(formData)
+                    body: formData
                 });
-
-                const data = await response.json();
-
                 const responseText = await response.text();
                 console.log(responseText);
-                // const data = await response.json();
-                    this.showSuccessMessage();
-            } catch (error) {
                 this.showSuccessMessage();
-            }
         }
 
         showSuccessMessage() {
@@ -224,6 +212,12 @@
             this.form.parentNode.insertBefore(message, this.form.nextSibling);
         }
 
+        showErrorMessage(message) {
+            const error = document.createElement('div');
+            error.innerText = message;
+            error.classList.add('error-message');
+            this.form.parentNode.insertBefore(error, this.form.nextSibling);
+        }
     }
 
     const form = document.querySelector('.form');
