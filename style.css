@@ -1,0 +1,32 @@
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+}
+/*.container{*/
+/*    margin: 0 auto;*/
+/*    max-width: 960px;*/
+/*    padding: 0 220px 220px;*/
+/*}*/
+#my_header {
+    height: 171px;
+    background-image: url(images/background.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#my_footer {
+    width: auto;
+    height: 60px;
+    background-color: #cff5d1;
+}
+.container{
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 0 220px 220px;
+}
+
