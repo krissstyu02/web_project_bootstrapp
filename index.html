@@ -3,23 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-<header class="header bg-dark" id="my_header">
-    <div class="container">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 col-8">
+        <header class="header bg-dark" id="my_header">
         <h1 class="header__title text-white text-center">
             <span class="header__text" style="font-size: 70px">
                 <img class="header__logo" src="images/list5.png" alt="Logo" style="width: 54px;">
                 GREEN CITY
             </span>
         </h1>
-    </div>
+
 </header>
-<div class="container-fluid">
-<nav class="content text-center bg-light">
+
+    <nav class="content text-center bg-light">
 
         <h3 class="content__title fs-1">Меню</h3>
         <ul class="menu-list nav nav-pills justify-content-center">
@@ -36,9 +39,7 @@
                 <a href="#my_footer" class="menu-list__link  active text-secondary">Нижняя часть страницы &nbsp;</a>
             </li>
         </ul>
-</nav>
-    <div class="row">
-        <div class="col-12">
+    </nav>
             <h1 class="content text-center">Список ссылок</h1>
                 <li class="link-list__item">
                     <a href="https://greenfitness.ru/" id="#flag" class="link-list__link link-list__link--secondary text-secondary">Наш сайт</a>
@@ -86,13 +87,9 @@
         <li class="link">
             <a href="downloads/example.pdf" download class="link__download text-secondary">Download PDF</a>
         </li>
-        </div>
-    </div>
 
 <br>
 
-    <div class="row">
-        <div class="col-md-12">
             <a name="link_list"></a>
             <h1 class="content text-center">Таблица</h1>
             <div class="table table--ecology">
@@ -127,11 +124,7 @@
                     </tbody>
                 </table>
             </div>
-        </div>
-    </div>
-
 <br>
-
             <h1 class="content__title" id="my_form">Форма</h1>
             <form class="form">
                 <div class="form-group">
@@ -231,12 +224,16 @@
 
 </script>
 <br>
-</div>
+
 <a name="my_footer">
 <footer id="my_footer">
     <p>©Стасюк Кристина </p>
 </footer>
 </a>
+        </div>
+    </div>
+</div>
+
 
 </body>
 </html>
